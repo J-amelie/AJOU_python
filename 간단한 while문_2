@@ -1,0 +1,8 @@
+fire = 0
+
+while fire == 0 :
+    temperature = int(input('현재 온도는 몇 도 인가요 : '))
+    if temperature > 60 :
+        fire = 1
+
+print("불이 났습니다. 대피하세요")

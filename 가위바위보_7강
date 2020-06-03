@@ -1,0 +1,50 @@
+"""
+    Project 04. 가위바위보
+
+    COPYRIGHT @ AJOU University
+    Author    :홍길동
+    Details   :컴퓨터와 가위바위보 게임을 해 그 결과를 출력한다.
+    Input     :'가위','바위','보' 가운데 선택한다.
+    Output    :사용자와 컴퓨터의 선택, 그리고 결괄르 출력한다.
+    File Name :project04.py
+    History   :(1차) 2020년 06월 01일
+"""
+
+from random import randint
+
+uc = input('가위, 바위, 보 가운데 하나를 선택하세요 : ')
+
+if not(uc == '가위' \
+    or uc == '바위' \
+    or uc == '보') :
+    print('잘못 입력했습니다.')
+    """ 오류처리 """
+else :
+    cc = randint(1,3)
+
+    if cc == 1 :
+        cc = '가위'
+    elif cc == 2 :
+        cc = '바위'
+    else:
+        cc = '보'
+    """정상입력"""
+    print('사용자 : {} vs. 컴퓨터 : {}'.format(uc, cc))
+
+if uc == cc :
+    print('비겼습니다.')
+elif uc == '가위' :
+    if cc == '바위' :
+     print('컴퓨터가 이겼습니다.')
+    else:
+        print('사용자가 이겼습니다.')
+elif uc == '바위' :
+    if cc == '보' :
+        print('컴퓨터가 이겼습니다.')
+    else :
+        print('사용자가 이겼습니다.')
+else:
+    if cc == '가위' :
+        print('컴퓨터가 이겼습니다.')
+    else:
+        print('사용자가 이겼습니다.')

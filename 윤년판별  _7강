@@ -1,0 +1,6 @@
+youn = int(input('연도를 입력하세요 : '))
+
+if(youn % 4 == 0 and youn % 100 !=0):
+    print('윤년입니다.')
+elif(youn % 400 == 0):
+    print('운년입니다.')

@@ -1,0 +1,17 @@
+'''
+    Project W5-01. 세 수 가운데 가장 큰 수 찾기
+
+    COPYRIGHT @ AJOU University
+    Author    :홍길동
+    Details   :세 개의 정수를 입력 받아 가장 큰 수를 출력한다.
+    Input     :세 개의 정수
+    Output    :입력된 수 가운데 가장 큰 수
+    File Name :project_w3_1.py
+    History   :(1차) 2020년 06월 01일
+'''
+
+year = int(input('연도를 입력하세요 : '))
+if(year % 4 == 0 and year % 100 != 0) or year % 400 == 0 :
+    print('{}년은 윤년 입니다.'.format(year))
+else :
+    print('{}년은 윤년이 아닙니다.'.format(year))
